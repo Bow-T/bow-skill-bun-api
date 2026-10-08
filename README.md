@@ -15,7 +15,9 @@ bow-skill-bun-api/
 └── skills/
     ├── bun-preflight-gate/SKILL.md
     ├── bun-api-endpoint/SKILL.md
+    ├── bun-api-security/SKILL.md
     ├── bun-db-migration/SKILL.md
+    ├── bun-queue-worker/SKILL.md
     ├── bun-local-stack/SKILL.md
     └── ts-union-variant/SKILL.md
 ```
@@ -24,7 +26,9 @@ bow-skill-bun-api/
 | --- | --- |
 | `bun-preflight-gate` | trước commit / push / mở MR: tìm và chạy đúng typecheck, lint, format, build, test của repo; tách lỗi có sẵn khỏi lỗi mới |
 | `bun-api-endpoint` | thêm hoặc sửa một route Hono: auth, validate, DB, lỗi, audit, log, và 6 ca test tối thiểu |
+| `bun-api-security` | sửa auth, CORS, cookie, endpoint nhận file hoặc URL, logger, luồng xoá dữ liệu, file env: soát theo từng bề mặt |
 | `bun-db-migration` | thêm hoặc sửa migration (Drizzle + SQL viết tay): tìm cơ chế nạp, đăng ký đủ chỗ, idempotent, apply hai lần |
+| `bun-queue-worker` | thêm hoặc sửa job qua hàng đợi và worker: payload tương thích ngược, handler chạy lại được, hạn hiển thị, job độc, tắt êm |
 | `bun-local-stack` | chạy thử trên stack nhiều tiến trình (DB + API + web + worker + thiết bị): bật lát cắt nhỏ nhất, đẩy một job đi hết đường |
 | `ts-union-variant` | thêm / bỏ / đổi tên một giá trị của union hay enum dùng chung giữa API, web, worker, app native |
 
