@@ -1,0 +1,21 @@
+{
+  "id": "bun-api",
+  "label": "Bun API (Hono)",
+  "version": "1.0.0",
+  "description": "Bộ skill cho backend TypeScript chạy trên Bun với Hono: cổng kiểm trước khi push, khuôn một HTTP endpoint, migration DB (Drizzle + SQL viết tay), chạy thử stack nhiều tiến trình ở local, và thêm giá trị vào union/enum dùng chung. Không gắn với sản phẩm nào: mỗi skill tìm quy ước từ chính repo đang làm rồi mới áp.",
+  "maintainer": "bow-gid",
+  "skillsDir": "skills",
+  "targets": {
+    "detect": [
+      { "file": "package.json", "contains": "\"hono\"" },
+      { "file": "bunfig.toml" }
+    ]
+  },
+  "skills": [
+    "bun-preflight-gate",
+    "bun-api-endpoint",
+    "bun-db-migration",
+    "bun-local-stack",
+    "ts-union-variant"
+  ]
+}
